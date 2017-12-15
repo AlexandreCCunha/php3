@@ -87,6 +87,68 @@ echo "<br>";
 var_dump($e <=> $f);
 
 
+// os dois (??) não mostra o que é nulo. ex: mostra apenas o 12 valomer $c.
+
+$g = NULL;
+
+$h = NULL;
+
+$i = 12;
+
+echo "<br>";
+
+echo $g ?? $h ?? $i;
+
+
+// Variaveis incrementais e decrementais.
+
+// incremento
+
+$j = 13;
+
+echo "<br>";
+
+
+echo $j++;
+
+// o echo abaixo mostra na tela o valor já incrementado
+
+echo "<br>";
+
+echo $j;
+
+echo "<br>";
+
+echo ++$j;
+
+echo "<br>";
+
+// faz o valor decrementar
+echo --$j; 
+
+//precedencia de execeução ( no site do php tem a tabela de precedencia)
+
+$resultado = 10 + 3 / 2;
+
+echo "<br>";
+
+var_dump ($resultado);
+
+// para forçar a soma é só colocar o valor primeiro entre parentese
+
+$resultado2 = (10 + 3) / 2;
+
+echo "<br>";
+
+var_dump($resultado2);
+
+// argumentos logicos &&(E); || (OU)
+
+$resultado3 = (10 + 3) / 2 > 5 || 10 + 5 < 3;
+
+echo "<br>";
+
+var_dump($resultado3); 
 
 
 
